@@ -2,18 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
 </head>
 
+<!-- source of icons: https://www.svgrepo.com/svg/520795/id-card -->
+
 <body>
-    <div class="container">         
-        <div class="sidebar">Sidebar</div>
-        <div class="header">header</div>
-        <div class="main-content">main-content</div>
+  <div class="container">
+    <div class="dashboard">
+      <div class="dashboard-logo">
+        <img class="dashboard-image" src="./icons/view-dashboard.svg" />
+        <div class="dashboard-title">Dashboard</div>
+      </div>
+
+      <ul class="grid-list">
+        <li><img src="./icons/home.svg" alt="Home"><span>Home</span></li>
+        <li><img src="./icons/profile.svg" alt="Profile"><span>Profile</span></li>
+        <li><img class="messages" src="./icons/messages.svg" alt="Messages" <span>Messages</span></li>
+        <li><img src="./icons/history.svg" alt="History"><span>History</span></li>
+        <li><img src="./icons/tasks.svg" alt="Tasks"><span>Tasks</span></li>
+        <li><img src="./icons/communities.svg" alt="Communities""><span>Communities</span></li>          
+        <br>
+        <li><img src=" ./icons/settings.svg" alt="Settings"><span>Settings</span></li>
+        <li><img src="./icons/support.svg" alt="Support"><span>Support</li>
+        <li><img src="./icons/privacy.svg" alt="Privacy"><span>Privacy</span></li>
+      </ul>
+    </div>    
+      
+      <div class="header-grid">
+        
+        <div class="magnify"><img src="./icons/magnify.svg" alt="Search image"></div>
+        <input type="text" class="search-input">
+        <div class="bell"><img src="./icons/bell.svg" alt="bell image"></div>
+        <div><img src="./icons/super-mario.svg" class="super-mario-image-1" alt="super mario image"></div>
+        <div class="super-mario">Super Mario</div>
+                
+        <div><img src="./icons/super-mario.svg" class="super-mario-image-2" alt="super mario image"></div>
+        <div class="contact-info">
+          <div class="greeting">Hi there,</div>
+          <div class="contact">Super Mario(@mario)</div> 
+        </div>
+               
+        <button type ="button" onclick="alert('New button clicked')" class="new">New</button>
+        <button type ="button" onclick = "alert('Upload button clicked')" class="upload">Upload</button>
+        <button type ="button" onclick = "alert('Share button clicked')" class="share">Share</button>      
+      </div>
     </div>
+    <div class="main-content">main-content</div>
+  </div>
 </body>
 
 </html>
