@@ -145,6 +145,18 @@ button.share {
 
 .main-content {
     border: 1px solid red;
-    width: 90vw;
-    margin: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    /*width: 90vw;*/
+    /*margin: auto;*/
+}
+
+.projects {
+    border: 1px solid blue;    
+    /*display: grid;*/
+}
+
+.project{
+    border: 1px solid green;
+    /*grid-column-start: 3;*/
 }
