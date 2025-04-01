@@ -151,6 +151,12 @@ button.share {
     /*margin: auto;*/
 }
 
+.main-headings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .projects {
     border: 1px solid blue;    
     /*display: grid;*/
@@ -160,3 +166,19 @@ button.share {
     border: 1px solid green;
     /*grid-column-start: 3;*/
 }
+
+.star {
+    width: 25px;
+    height: 25px;    
+}
+
+.eye {
+    width: 25px;
+    height: 25px;    
+}
+
+.source-fork {
+    width: 25px;
+    height: 25px;
+}
+
