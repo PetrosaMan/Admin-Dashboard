@@ -7,8 +7,8 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr;
-    gap: 10px;
+    grid-template-rows: auto auto;
+    gap: 5px;
     border: 2px solid black;
     width: 90vw;
     margin: 0 auto;
@@ -69,7 +69,8 @@
     justify-items: center;
     align-items: center; 
     padding: 5px;
-    height: 25vh;
+    /*height: 25vh;*/
+
 }
 
 .magnify { 
@@ -145,10 +146,9 @@ button.share {
 
 .main-content {
     border: 1px solid red;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    /*width: 90vw;*/
-    /*margin: auto;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto;      
 }
 
 .main-headings {
@@ -159,12 +159,14 @@ button.share {
 
 .projects {
     border: 1px solid blue;    
-    /*display: grid;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    
 }
 
 .project{
-    border: 1px solid green;
-    /*grid-column-start: 3;*/
+    border: 1px solid green;    
 }
 
 .star {
@@ -181,4 +183,25 @@ button.share {
     width: 25px;
     height: 25px;
 }
+
+.announcements-and-trending {
+    border: 1px solid yellow;
+    display: grid;
+    
+}
+
+.announcements {
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: auto auto auto auto;    
+}
+
+.trending {
+    border: 1px solid lightgreen;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+
 
