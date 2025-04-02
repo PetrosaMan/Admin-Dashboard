@@ -161,27 +161,47 @@ button.share {
     border: 1px solid blue;    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 0.15fr auto auto;
     
 }
 
-.project{
-    border: 1px solid green;    
+.super-cool-project{
+    border: 1px solid brown;
+    grid-column-start: 1;       
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr;
+    height: 60%;
 }
 
-.star {
+.project-name {
+    padding:  0.4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+
+.description {
+    grid-column: 1 / 4;
+    grid-row-start: 2;
+    
+}
+
+img.star {
     width: 25px;
     height: 25px;    
 }
 
-.eye {
-    width: 25px;
-    height: 25px;    
-}
-
-.source-fork {
+img.eye {
     width: 25px;
     height: 25px;
+    grid-column: 2;
+    grid-row: 3;         
+}
+
+img.source-fork {
+    width: 25px;
+    height: 25px;    
 }
 
 .announcements-and-trending {
