@@ -122,6 +122,7 @@
 img.super-mario-image-1 {
     width: 40px;
     height: 40px;
+    margin-left: 60px;    
 }
 
 img.super-mario-image-2 {
@@ -149,12 +150,14 @@ button.share {
     grid-template-rows: auto auto auto;      
 }
 
+.projects-title {
+    padding: 4px;
+}
 .projects {
     border: 1px solid blue;    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.15fr auto auto;
-    
+    grid-template-rows: 0.15fr auto auto;    
 }
 
 .super-cool-project {
@@ -175,6 +178,7 @@ button.share {
 .description {
     grid-column-start: 1;
     grid-column-end: 4;
+    font-size: 0.75rem;
 }
 
 .icons {
@@ -286,7 +290,8 @@ img.source-fork {
 .announcements {
     border: 1px solid red;
     display: grid;
-    grid-template-rows: auto auto auto auto;    
+    grid-template-rows: auto auto auto auto;
+    font-size: 0.75rem;                    
 }
 
 .trending {
@@ -294,6 +299,7 @@ img.source-fork {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    font-size: 0.75rem;
 }
 
 
