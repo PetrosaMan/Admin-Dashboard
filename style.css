@@ -7,10 +7,10 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     gap: 5px;
     border: 2px solid black;
-    width: 90vw;
+    /*width: 90vw;*/
     margin: 0 auto;
 }
 
@@ -69,8 +69,6 @@
     justify-items: center;
     align-items: center; 
     padding: 5px;
-    /*height: 25vh;*/
-
 }
 
 .magnify { 
@@ -147,14 +145,8 @@ button.share {
 .main-content {
     border: 1px solid red;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: auto auto; 
     grid-template-rows: auto auto auto;      
-}
-
-.main-headings {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .projects {
@@ -165,16 +157,15 @@ button.share {
     
 }
 
-.super-cool-project{
+.super-cool-project {
     border: 1px solid brown;
     grid-column-start: 1;       
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 0.3fr auto 0.3fr;
-    height: 60%;
+    grid-template-rows: 0.3fr auto 0.3fr;    
 }
 
-.project-name {
+.project-name-1 {
     padding:  0.4rem;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -182,27 +173,103 @@ button.share {
 }
 
 .description {
-    grid-column: 1 / 4;
-    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.less-cool-project {
+    border: 1px solid green;
+    grid-column-start: 2;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr; 
     
 }
 
+.project-name-2 {
+    padding:  0.4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.impossible-app {
+    border: 1px solid green;
+    grid-column-start: 1;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr; 
+    
+}
+
+.project-name-3 {
+    padding:  0.4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.easy-peasy-app {
+    border: 1px solid green;
+    grid-column-start: 2;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr;
+}
+
+.project-name-4 {
+    padding: 0.4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.add-blocker {
+    border: 1px solid green;
+    grid-column-start: 1;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr;    
+}
+
+
+
+.money-maker {
+    border: 1px solid green; 
+    grid-column-start: 2;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.3fr auto 0.3fr;   
+}
+
+
+.project-name-5 {     
+        padding:  0.4rem;
+        grid-column-start: 1;
+        grid-column-end: 4;    
+}
+
+.project-name-6 {
+   padding: 0.4rem;
+   grid-column-start: 1;
+   grid-column-end: 4;   
+}
+
 img.star {
-    width: 25px;
-    height: 25px;    
+    width: 15px;
+    height: 15px;                   
 }
 
 img.eye {
-    width: 25px;
-    height: 25px;
-    grid-column: 2;
-    grid-row: 3;         
+    width: 15px;
+    height: 15px;             
 }
 
+
+
 img.source-fork {
-    width: 25px;
-    height: 25px;    
+    width: 15px;
+    height: 15px;          
 }
+    
+
 
 .announcements-and-trending {
     border: 1px solid yellow;
