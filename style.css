@@ -9,9 +9,11 @@
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto auto auto;
     gap: 5px;
-    border: 2px solid black;
-    /*width: 90vw;*/
+    border: 2px solid black; 
+    padding-right: 5px;   
     margin: 0 auto;
+    height: auto;
+    width: auto;
 }
 
 .dashboard {
@@ -122,12 +124,11 @@
 img.super-mario-image-1 {
     width: 40px;
     height: 40px;
-    margin-left: 60px;    
-}
+}  
 
 img.super-mario-image-2 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 button.new,
@@ -144,7 +145,7 @@ button.share {
 
 
 .main-content {
-    border: 1px solid red;
+    border: 1px solid black;
     display: grid;
     grid-template-columns: auto auto; 
     grid-template-rows: auto auto auto;      
@@ -154,14 +155,14 @@ button.share {
     padding: 4px;
 }
 .projects {
-    border: 1px solid blue;    
+    border: 1px solid black;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.15fr auto auto;    
 }
 
 .super-cool-project {
-    border: 1px solid brown;
+    border: 1px solid black;
     grid-column-start: 1;       
     display: grid;
     grid-template-columns: auto auto auto;
@@ -189,7 +190,7 @@ button.share {
 }
 
 .less-cool-project {
-    border: 1px solid green;
+    border: 1px solid black;
     grid-column-start: 2;    
     display: grid;
     grid-template-columns: auto auto auto;
@@ -204,7 +205,7 @@ button.share {
 }
 
 .impossible-app {
-    border: 1px solid green;
+    border: 1px solid black;
     grid-column-start: 1;    
     display: grid;
     grid-template-columns: auto auto auto;
@@ -219,7 +220,7 @@ button.share {
 }
 
 .easy-peasy-app {
-    border: 1px solid green;
+    border: 1px solid black;
     grid-column-start: 2;    
     display: grid;
     grid-template-columns: auto auto auto;
@@ -243,7 +244,7 @@ button.share {
 
 
 .money-maker {
-    border: 1px solid green; 
+    border: 1px solid black; 
     grid-column-start: 2;    
     display: grid;
     grid-template-columns: auto auto auto;
@@ -278,21 +279,61 @@ img.source-fork {
     height: 15px;          
 }
 
+img.dog {
+    width: 30px;
+    height: 30px;          
+}
+
+img.man {
+    width: 30px;
+    height: 30px;          
+}
+
+img.butterfly {
+    width: 30px;
+    height: 30px;          
+}
+
 .announcements-and-trending {
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
     display: grid;    
 }
 
 .announcements-title {
     padding: 4px;    
     font-size: 1rem;
+    font-weight: bold;
 }    
 .announcements {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: grid;           
     grid-template-rows: auto auto auto auto;
-    font-size: 0.8rem;
+    font-size: 0.8rem;    
     padding: 10px;                    
+}
+
+.site-maintenance {
+    font-weight: bold;    
+}
+
+p.maintenance-text {
+    font-weight: 100;
+}
+
+.community-share-day {
+    font-weight: bold;
+}
+
+.share-day {
+    font-weight: 100;
+}
+
+.updated-privacy-policy {
+    font-weight: bold;
+}
+
+.privacy-policy {
+    font-weight: 100;
 }
 
 hr {
@@ -300,12 +341,88 @@ hr {
 }
 
 .trending {
-    border: 1px solid lightgreen;
+    /*border: 1px solid lightgreen;*/
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto auto;
+    row-gap: 5px;
     font-size: 0.75rem;
+    padding: 10px;
 }
+
+.trending-title {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 4px;
+}
+
+p.title {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trending-one {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+
+}
+
+.trending-two {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;    
+}
+
+div.trending-two {
+    grid-row-start: 2;
+    grid-row-end: 3;    
+}
+
+div.contact-one,
+div.contact-two,
+div.contact-three,
+div.contact-four {
+    margin-left: -25px;
+}
+
+.trending-three {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+}
+
+div.trending-three {
+    grid-row-start: 3;
+    grid-row-end: 4;    
+}
+
+.trending-four {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+}
+
+div.trending-four {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
